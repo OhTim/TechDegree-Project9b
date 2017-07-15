@@ -15,3 +15,15 @@ select {
     background-color: $grey;
   }
 }
+
+.flex-button {
+  @media #{$brk-m} {
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    @media #{$brk-m} {
+      width: 47.5%;
+    }
+  }
+}

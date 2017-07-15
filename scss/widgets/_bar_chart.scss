@@ -1,0 +1,21 @@
+// =========================================
+//  Bar Chart
+// =========================================
+
+.chart-flex {
+  @media #{$brk-m} {
+    margin-top: 20px;
+    display: flex;
+  }
+}
+
+.chart-bar {
+  @media #{$brk-m} {
+  width: 50%;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  }
+}

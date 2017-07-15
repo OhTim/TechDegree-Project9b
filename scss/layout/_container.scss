@@ -5,4 +5,68 @@
 .wrapper {
   margin: 0 10px;
   color: $grey-dove;
+  @media #{$brk-m} {
+    margin: 0px;
+  }
+}
+
+.chart-traffic,
+.social-stats,
+.new-members,
+.recent-activity,
+.message-user,
+.settings {
+  @media #{$brk-m} {
+    padding: 0 10px;
+  }
+}
+
+.chart-bar,
+.chart-pie {
+  @media #{$brk-m} {
+    padding: 0 10px;
+  }
+}
+
+.members-flex,
+.input-flex {
+  @media #{$brk-l} {
+    display: flex;
+  }
+}
+
+
+.new-members,
+.recent-activity,
+.message-user,
+.settings {
+  @media #{$brk-l} {
+    width: 50%;
+  }
+}
+
+.new-members,
+.message-user {
+  @media #{$brk-l} {
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid ;
+    border-right: 1px solid grey;
+  }
+}
+
+.recent-activity,
+.settings {
+  @media #{$brk-l} {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+}
+
+.message-user,
+.settings {
+  border-top: none;
 }

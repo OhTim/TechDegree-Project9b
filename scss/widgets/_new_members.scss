@@ -16,8 +16,11 @@
 
 .new-members-date {
   display: none;
-  font-size: 8px; // display at 720px & up
+  font-size: 12px; // display at 720px & up
   margin-left: auto;
+  @media #{$brk-l} {
+    display: block;
+  }
 }
 
 .new-members li {

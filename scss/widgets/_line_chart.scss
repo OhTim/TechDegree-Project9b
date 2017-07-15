@@ -1,6 +1,14 @@
 // =========================================
 // Line Chart
 // =========================================
+.flex-chart-settings {
+  @media #{$brk-m} {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
 
 .chart-traffic h3 {
   text-align: center;
