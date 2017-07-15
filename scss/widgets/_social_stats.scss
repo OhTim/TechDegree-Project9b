@@ -1,0 +1,32 @@
+// =========================================
+// Header
+// =========================================
+
+.social-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 15px;
+  background-color: $color-secondary;
+  border-radius: 50%;
+  &-stats {
+    display: inline-block;
+    p {
+      margin: 0;
+      font-size: 1.1em;
+    }
+  }
+}
+
+.social-stats li {
+  display: flex;
+  align-items: center;
+  background-color: #E4DCF6;
+  border: 1px solid #49386D;
+  margin-bottom: 10px;
+}

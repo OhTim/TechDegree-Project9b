@@ -1,0 +1,17 @@
+// =========================================
+// Settings
+// =========================================
+
+select {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.settings button {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 40px;
+    background-color: $grey;
+  }
+}

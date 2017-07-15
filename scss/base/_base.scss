@@ -7,6 +7,8 @@
 }
 
 body {
+  background: $color-primary;
+  color: $white;
   margin: 0;
   font-family: $font-stack-primary;
 }
@@ -21,4 +23,30 @@ li {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+p {
+  margin: 0;
 }

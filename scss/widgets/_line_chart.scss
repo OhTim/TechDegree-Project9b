@@ -1,0 +1,22 @@
+// =========================================
+// Line Chart
+// =========================================
+
+.chart-traffic h3 {
+  text-align: center;
+}
+
+.chart-settings {
+  display: flex;
+  justify-content: center;
+  li {
+    padding: 2px 5px;
+    margin: 0 5px
+  }
+}
+
+.hourlyLineChart,
+.dailyLineChart,
+.monthlyLineChart {
+  display: none;
+}

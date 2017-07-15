@@ -1,0 +1,33 @@
+// =========================================
+// Recent Activity
+// =========================================
+
+.recent-activity {
+  h4 {
+    font-size: 14px;
+  }
+  a {
+    color: $color-secondary;
+    font-weight: bold;
+    margin-left: auto;
+    padding: 5px;
+  }
+  p {
+    font-size: 13px;
+    color: $grey-slate;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid grey;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  &-info {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
