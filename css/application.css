@@ -83,6 +83,56 @@ nav li {
 .wrapper {
   margin: 0 10px;
   color: #666666; }
+  @media (min-width: 768px) {
+    .wrapper {
+      margin: 0px; } }
+
+@media (min-width: 768px) {
+  .chart-traffic,
+  .social-stats,
+  .new-members,
+  .recent-activity,
+  .message-user,
+  .settings {
+    padding: 0 10px; } }
+
+@media (min-width: 768px) {
+  .chart-bar,
+  .chart-pie {
+    padding: 0 10px; } }
+
+@media (min-width: 1024px) {
+  .members-flex,
+  .input-flex {
+    display: flex; } }
+
+@media (min-width: 1024px) {
+  .new-members,
+  .recent-activity,
+  .message-user,
+  .settings {
+    width: 50%; } }
+
+@media (min-width: 1024px) {
+  .new-members,
+  .message-user {
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid;
+    border-right: 1px solid grey; } }
+
+@media (min-width: 1024px) {
+  .recent-activity,
+  .settings {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey; } }
+
+.message-user,
+.settings {
+  border-top: none; }
 
 .dashboard {
   text-align: center; }
@@ -102,6 +152,13 @@ nav li {
   border: 1px solid #49386D;
   border-radius: 5px; }
 
+@media (min-width: 768px) {
+  .flex-chart-settings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px; } }
+
 .chart-traffic h3 {
   text-align: center; }
 
@@ -116,6 +173,28 @@ nav li {
 .dailyLineChart,
 .monthlyLineChart {
   display: none; }
+
+@media (min-width: 768px) {
+  .chart-flex {
+    margin-top: 20px;
+    display: flex; } }
+
+@media (min-width: 768px) {
+  .chart-bar {
+    width: 50%;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey; } }
+
+@media (min-width: 768px) {
+  .chart-pie {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    width: 50%; } }
 
 .social-icon svg {
   width: 30px;
@@ -140,6 +219,14 @@ nav li {
   background-color: #E4DCF6;
   border: 1px solid #49386D;
   margin-bottom: 10px; }
+  @media (min-width: 1024px) {
+    .social-stats li {
+      width: 32%; } }
+
+@media (min-width: 1024px) {
+  .social-stats-list {
+    display: flex;
+    justify-content: space-between; } }
 
 .new-members-info {
   display: inline-block;
@@ -152,8 +239,11 @@ nav li {
 
 .new-members-date {
   display: none;
-  font-size: 8px;
+  font-size: 12px;
   margin-left: auto; }
+  @media (min-width: 1024px) {
+    .new-members-date {
+      display: block; } }
 
 .new-members li {
   display: flex;
@@ -215,5 +305,13 @@ select {
   .settings button:last-child {
     margin-bottom: 40px;
     background-color: grey; }
+
+@media (min-width: 768px) {
+  .flex-button {
+    display: flex;
+    justify-content: space-between; } }
+@media (min-width: 768px) {
+  .flex-button button {
+    width: 47.5%; } }
 
 /*# sourceMappingURL=application.css.map */
