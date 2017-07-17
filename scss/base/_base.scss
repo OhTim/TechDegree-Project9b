@@ -29,11 +29,20 @@ h1 {
   font-size: 3em;
   margin: 0;
   text-align: center;
+  @media #{$brk-l} {
+    margin-left: 20px;
+  }
 }
 
 h2 {
   font-size: 2em;
   margin: 10px 0;
+  @media #{$brk-l} {
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 }
 
 h3 {

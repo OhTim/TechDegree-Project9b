@@ -1,4 +1,7 @@
 var weeklyLC = document.getElementById('weeklyLineChart').getContext('2d');
+var hourlyLC = document.getElementById('hourlyLineChart').getContext('2d');
+var dailyLC = document.getElementById('dailyLineChart').getContext('2d');
+var monthlyLC = document.getElementById('monthlyLineChart').getContext('2d');
 var dailyBC = document.getElementById('dailyBarChart').getContext('2d');
 var mobilePC = document.getElementById('mobilePieChart').getContext('2d');
 var weeklyLineChart = new Chart(weeklyLC, {
@@ -39,6 +42,46 @@ var weeklyLineChart = new Chart(weeklyLC, {
 
     }
 });
+
+var hourlyLineChart = new Chart(hourlyLC, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
+        datasets: [{
+            label: "Weekly Traffic",
+            backgroundColor: '#9370DB',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [500, 1000, 750, 1250, 1700, 1200, 1500, 1000, 1500, 2000, 1500],
+            lineTension: 0,
+            pointBackgroundColor: "white",
+            pointBorderColor: "#49386D",
+            pointRadius: "4",
+            pointHoverRadius: "4",
+            borderColor: "#49386D",
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      legend: {
+        display: false,
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            max: 2500,
+            min: 500,
+            stepSize: 500,
+          },
+        }]
+      }
+
+    }
+});
+
 
 var dailyBarChart = new Chart(dailyBC, {
   type: 'bar',

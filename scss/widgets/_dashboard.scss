@@ -6,19 +6,62 @@
   text-align: center;
 }
 
+
 .searchInput input[type="text"] {
   width: 80%;
   height: 35px;
   max-width: 500px;
   margin-bottom: 20px;
+  @media #{$brk-l} {
+    margin-bottom: 0;
+  }
 }
 
-.alert {
+
+.banner-alert {
+  position: relative;
   display: inline-block;
   color: $white;
+  min-width: 92%;
   max-width: 92%;
   padding: 8px;
   background-color: $color-secondary;
   border: 1px solid $purple-dark;
   border-radius: 5px;
+  text-align: left;
+}
+
+
+
+.alert-exit {
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  right: 5px;
+  font-size: 18px;
+  display: inline-block;
+  max-width: 10%;
+  height: 38px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.flex-dash {
+  text-align: center;
+  @media #{$brk-l} {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}
+
+.searchInput {
+  @media #{$brk-l} {
+    width: 85%;
+    text-align: right;
+    padding: 20px;
+    border-bottom: 1px solid $grey;
+    border-left: 1px solid $grey;
+  }
 }
